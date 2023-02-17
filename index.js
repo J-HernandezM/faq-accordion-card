@@ -46,11 +46,12 @@ function eventListenersTitles(objectArray){
                     idElement=qArray[i].number
                     let answerSelected=document.querySelector(`#ans${idElement}`)
                     let wrapSelected=document.querySelector(`#wrap${idElement}`)
-                    inactiveLogic()
+                    let titleSelected=object
+                    inactiveLogic(answerSelected)
+                    modifiedLogic(wrapSelected, titleSelected)
                     answerSelected.classList.toggle('inactive')
                     wrapSelected.classList.toggle('modifier')
                     object.classList.toggle('titlemodified')
-                    console.log('correcto')
                 }
             }
 
@@ -68,16 +69,65 @@ function eventListenersArrows(objectArray){
                     let answerSelected=document.querySelector(`#ans${idElement}`)
                     let wrapSelected=document.querySelector(`#wrap${idElement}`)
                     let titleSelected=document.querySelector(`#title${idElement}`)
-                    inactiveLogic()
+                    inactiveLogic(answerSelected)
+                    modifiedLogic(wrapSelected, titleSelected)
                     answerSelected.classList.toggle('inactive')
                     wrapSelected.classList.toggle('modifier')
                     titleSelected.classList.toggle('titlemodified')
-                    console.log('correcto')
                 }
             }
         })
     })
 }
-function inactiveLogic(){
+function inactiveLogic(answer){
+    let q1html=document.querySelector('#ansq1')
+    let q2html=document.querySelector('#ansq2')
+    let q3html=document.querySelector('#ansq3')
+    let q4html=document.querySelector('#ansq4')
+    let q5html=document.querySelector('#ansq5')
+    let qhtmlArray=[q1html, q2html, q3html, q4html, q5html]
+    qhtmlArray.forEach((q)=>{
+        if(answer==q){
+        }
+        else{
+            if(q.classList.contains('inactive')){
+            }
+            else{
+                q.classList.add('inactive')
+            }
+        }
+    })
 
+}
+function modifiedLogic(wrap, title){
+    let w1html=document.querySelector('#wrapq1')
+    let w2html=document.querySelector('#wrapq2')
+    let w3html=document.querySelector('#wrapq3')
+    let w4html=document.querySelector('#wrapq4')
+    let w5html=document.querySelector('#wrapq5')
+    let t1html=document.querySelector('#titleq1')
+    let t2html=document.querySelector('#titleq2')
+    let t3html=document.querySelector('#titleq3')
+    let t4html=document.querySelector('#titleq4')
+    let t5html=document.querySelector('#titleq5')
+    let whtmlArray=[w1html, w2html, w3html, w4html, w5html]
+    let thtmlArray=[t1html, t2html, t3html, t4html, t5html]
+    whtmlArray.forEach((w)=>{
+        if(wrap==w){
+        }
+        else{
+            if(w.classList.contains('modifier')){
+                w.classList.remove('modifier')
+            }
+        }
+    })
+    thtmlArray.forEach((t)=>{
+        if(title==t){
+        }
+        else{
+            if(t.classList.contains('titlemodified')){
+                t.classList.remove('titlemodified')
+            }
+        }
+    })
 }
