@@ -119,6 +119,7 @@ body{
         grid-template-rows:20% 80%;
 
         width: 800rem;
+        height: 500rem;
     }
     .card__mobileImages{
         display: none;
