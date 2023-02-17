@@ -33,7 +33,7 @@ body{
     place-items: center;
 
     width: 100vw;
-    height: 98vh;
+    height: 97vh;
 }
 .card{
     display: grid;
@@ -106,4 +106,73 @@ body{
 }
 .inactive{
     display: none;
+}
+.card__desktopImages{
+    display: none;
+}
+@media (min-width:1000px) {
+    .card{
+        position: relative;
+        display: grid;
+        place-items:start;
+        grid-template-columns: 55% 45%;
+        grid-template-rows:20% 80%;
+
+        width: 800rem;
+    }
+    .card__mobileImages{
+        display: none;
+    }
+    .card__desktopImages{
+        position: absolute;
+        display: block;
+        grid-row:1/3;
+
+        top: -22rem;
+        width: 55%;
+        height: 130%
+    }
+    .card__title{
+        grid-area: 1/2/2/3;
+
+        margin-top: 45rem;
+    }
+    .questionTitle:hover{
+        color: var(--soft-red);
+    }
+    .card__questions{
+        display: flex;
+        flex-direction: column;
+        grid-area: 2/2/3/3;
+
+        height: 90%;
+        justify-content: space-evenly;
+    }
+    .questionWrap{
+        margin: 0;
+    }
+    .desktopImg{
+        position: absolute;
+        top: 75rem;
+        left: -50rem;
+    }
+    .womanImageDesktop{
+        top: 85rem;
+        left: -76rem;
+        z-index: 2;
+        width: 430rem;
+        clip-path: inset(0 0 0 17.5%);
+    }
+    .desktopShadow{
+        top: -288rem;
+        left: -616rem;
+        z-index: 1;
+        clip-path: inset(30.5% 0 16% 63.5%);
+    }
+    .boxImage{
+        top: 215rem;
+        left: -76rem;
+        z-index: 3;
+        width: 160rem;
+    }
 }
