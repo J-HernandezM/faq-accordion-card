@@ -23,7 +23,7 @@
     padding: 0;
 }
 body{
-    background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
     font-family: 'Kumbh Sans', sans-serif;
     width: 100vw;
     height: 100vh;
@@ -87,7 +87,22 @@ body{
 .questionWrap{
     height: 50rem;
     border-bottom: 1px var(--light-grayish0blue) solid;
-    padding-top: 15rem;
+    margin-top: 20rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.titleContainer:hover{
+    cursor: pointer;
+}
+.titlemodified{
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+.modifier{
+    height: fit-content;
+    color: var(--very-dark-blue);
+    padding-bottom: 10rem;
 }
 .inactive{
     display: none;
