@@ -12,10 +12,10 @@
 
     --light-grayish0blue:hsl(240, 5%, 91%);
 
-    font-size: 6.25%;
-    --lg:28rem;
-    --md:14rem;
-    --sm:12rem;
+    font-size: 62.5%;
+    --lg:2.8rem;
+    --md:1.4rem;
+    --sm:1.2rem;
 }
 *{
     box-sizing: border-box;
@@ -40,12 +40,12 @@ body{
     place-items: start center;
     grid-template-rows: 25% 10% 60%;
     
-    width: 330rem;
+    width: 33.0rem;
     height: 65%;
-    padding: 20rem;
+    padding: 2.0rem;
     
     background-color: white;
-    border-radius: 20rem;
+    border-radius: 2.0rem;
 }
 .card__mobileImages{
     position:relative;
@@ -58,10 +58,10 @@ body{
     left: 10%;
 }
 .mobileShadow{
-    top: -30rem
+    top: -3.0rem
 }
 .womanImageMobile{
-    top:-136rem
+    top:-13.6rem
 }
 .card__title{
     font-size: var(--lg);
@@ -85,12 +85,12 @@ body{
     width: 100%;
 }
 .questionWrap{
-    height: 30rem;
+    height: 3.0rem;
     border-bottom: 1px var(--light-grayish0blue) solid;
-    margin-top: 20rem;
+    margin-top: 2.0rem;
     padding-bottom: 0rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
 }
 .titleContainer:hover{
     cursor: pointer;
@@ -102,7 +102,7 @@ body{
 .modifier{
     height: fit-content;
     color: var(--very-dark-blue);
-    padding-bottom: 10rem;
+    padding-bottom: 1.0rem;
 }
 .inactive{
     display: none;
@@ -118,8 +118,8 @@ body{
         grid-template-columns: 55% 45%;
         grid-template-rows:20% 80%;
 
-        width: 800rem;
-        height: 500rem;
+        width: 80.0rem;
+        height: 50.0rem;
     }
     .card__mobileImages{
         display: none;
@@ -129,14 +129,14 @@ body{
         display: block;
         grid-row:1/3;
 
-        top: -22rem;
+        top: -2.2rem;
         width: 55%;
         height: 130%
     }
     .card__title{
         grid-area: 1/2/2/3;
 
-        margin-top: 45rem;
+        margin-top: 4.5rem;
     }
     .questionTitle:hover{
         color: var(--soft-red);
@@ -154,26 +154,26 @@ body{
     }
     .desktopImg{
         position: absolute;
-        top: 75rem;
-        left: -50rem;
+        top: 7.5rem;
+        left: -5.0rem;
     }
     .womanImageDesktop{
-        top: 85rem;
-        left: -76rem;
+        top: 8.5rem;
+        left: -7.6rem;
         z-index: 2;
-        width: 430rem;
+        width: 43.0rem;
         clip-path: inset(0 0 0 17.5%);
     }
     .desktopShadow{
-        top: -288rem;
-        left: -616rem;
+        top: -28.8rem;
+        left: -61.6rem;
         z-index: 1;
         clip-path: inset(30.5% 0 16% 63.5%);
     }
     .boxImage{
-        top: 215rem;
-        left: -76rem;
+        top: 21.5rem;
+        left: -7.6rem;
         z-index: 3;
-        width: 160rem;
+        width: 16.0rem;
     }
 }
